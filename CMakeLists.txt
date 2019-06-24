@@ -12,6 +12,7 @@ add_message_files(
   TwoArrayWithHeader.msg
   TwoArrayWithoutHeader.msg
   OneArrayWithHeader.msg
+  OneArrayWithoutHeader.msg
 )
 
 generate_messages(

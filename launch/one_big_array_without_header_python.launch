@@ -1,0 +1,7 @@
+<launch>
+  <arg name="from" default="125" />
+  <arg name="to" default="50" />
+  <node name="one_big_marray_witout_header_python" pkg="throttle_debug" type= "one_big_marray_without_header.py" output="screen"/>
+  <node name="tools_throttle" pkg="topic_tools" type= "throttle" args="messages /hoge $(arg to)" output="screen"/>
+  <node name="rostopic_hz" pkg="rostopic" type="rostopic" args="hz /hoge_throttle" output="screen"/>
+</launch>
